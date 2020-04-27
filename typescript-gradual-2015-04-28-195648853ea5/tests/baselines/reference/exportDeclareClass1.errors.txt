@@ -1,0 +1,18 @@
+tests/cases/compiler/exportDeclareClass1.ts(2,24): error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+tests/cases/compiler/exportDeclareClass1.ts(3,34): error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+
+
+==== tests/cases/compiler/exportDeclareClass1.ts (2 errors) ====
+        export declare class eaC {
+            static tF() { };
+                           ~
+!!! error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+            static tsF(param:any) { };
+                                     ~
+!!! error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+        };
+    	
+    	export declare class eaC2 {
+            static tF();
+            static tsF(param:any);
+        };
